@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #7C7C7C;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.title {
+    font-size: 4rem;
+    margin: 2rem;
+    text-align: center;
+}
+
+.signupForm {
+    background-color: #2B303A;
+    color: #EEE5E9;
+    width: 650px;
+    padding: 2rem;
+    border-radius: 30px;
+    font-size: 1.1rem;
+}
+
+.formContent {
+    width: 85%;
+    margin: 10px auto;
+}
+
+.signupForm label {
+    display: block;
+    text-align: left;
+    margin-bottom: 2px;
+    margin: 12px 0 12px;
+}
+
+.signupForm input[type="text"], .signupForm input[type="email"],
+.signupForm input[type="password"], .signupForm input[type="date"] {
+    margin: 0;
+    width: 100%;
+    padding: 6px 8px;
+    box-sizing: border-box;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    border: none;
+    background-color: #92DCE5;
+}
+
+.gender-group {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    /* margin: 6px 0 14px; */
+}
+
+.gender-group label {
+    margin: 0;
+}
+
+.terms-group {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.signupMessage {
+    background-color: #92DCE5;
+    display: none;
+    height: 50px;
+    width: 85%;
+    border-radius: 15px;
+    text-align: center;
+    align-content: center;
+    color: #2B303A;
+    font-weight: bold;
+    margin: 0 auto 15px;
+}
+
+#username-error, #email-error, #password-error, #password2-error,
+#bdate-error, #gender-error, #terms-error {
+    color: red;
+    display: none;
+    margin: 10px 0;
+}
+
+#signupButton {
+    background-color: #D64933;
+    color: #EEE5E9;
+    border: none;
+    border-radius: 1rem;
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+#signupButton:disabled {
+    background-color: #8a2e1d;
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+#signupButton:not(:disabled):hover {
+    background-color: #f06a4e;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <script src="jquery-3.7.1.min.js"></script>
+  <title>Sign-up</title>
+</head>
+<body>
+  <h1 class="title">Sign-up form mock-up</h1>
+  <div class="signupForm">
+    <div class="signupMessage" id="signupMessage">
+      Congratulations! You have been successfully signed up!
+    </div>
+    <form action="" onsubmit="return false;" id="signupForm">
+      <div class="formContent">
+        <label for="name">Full name:</label>
+        <input type="text" id="username" name="username">
+        <p id="username-error"></p>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email">
+        <p id="email-error"></p>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <p id="password-error"></p>
+
+        <label for="password2">Confirm password:</label>
+        <input type="password" id="password2" name="password2">
+        <p id="password2-error"></p>
+
+        <label for="bdate">Birthday:</label>
+        <input type="date" id="bdate" name="bdate">
+        <p id="bdate-error"></p>
+
+        <label for="gender">Gender:</label>
+        <div class="gender-group">
+          <input type="radio" id="genderM" name="gender" value="Male">
+          <label for="genderM">Male</label>
+          <input type="radio" id="genderF" name="gender" value="Female">
+          <label for="genderF">Female</label>
+          <input type="radio" id="genderX" name="gender" value="Other">
+          <label for="genderX">Other</label>
+        </div>
+        <p id="gender-error"></p>
+
+        <div class="terms-group">
+          <label for="terms">Accept user agreement</label>
+          <input type="checkbox" id="terms" name="terms">
+        </div>
+        <p id="terms-error"></p>
+
+        <button type="submit" id="signupButton" name="button" disabled>Sign-up</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
