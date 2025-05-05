@@ -51,7 +51,6 @@ body {
     display: flex;
     gap: 10px;
     align-items: center;
-    /* margin: 6px 0 14px; */
 }
 
 .gender-group label {
